@@ -18,7 +18,7 @@ button.addEventListener('click', () => {
     circle.style.width = '10%';
     box.appendChild(circle);
 
-    console.log(box.offsetHeight, box.offsetWidth)
+    console.log(box.offsetHeight, box.offsetWidth)  
 });
 
 
