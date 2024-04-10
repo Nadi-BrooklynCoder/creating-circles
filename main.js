@@ -1,6 +1,5 @@
 let button = document.querySelector('button');
 
-
 button.addEventListener('click', () => {
     let box = document.querySelector('.container0');
     const circle = document.createElement('div');
@@ -19,7 +18,7 @@ button.addEventListener('click', () => {
     circle.style.width = `${circleSize}px`;
     box.appendChild(circle);
 
-    console.log(box.offsetHeight, box.offsetWidth)  
+    
 });
 
 function getRandomColor() {

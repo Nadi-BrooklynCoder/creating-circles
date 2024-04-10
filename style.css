@@ -17,12 +17,15 @@ body  {
 
 .container0 {
     border: 5px solid black;
-    width: 90vw;
-    height: 90vh;
+    width: 1000px;
+    height: 700px;
     position: relative;
 }
 
 button {
-    width: 25%;
+    width: 20%;
     margin: 0 auto;
+    border-radius: 25px;
+    height: 50px;
+    /* margin-bottom: 1.5em; */
 }
