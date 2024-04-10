@@ -7,15 +7,16 @@ button.addEventListener('click', () => {
     circle.classList.add('circle'); 
     const boxWidth = box.offsetWidth ;
     const boxHeight = box.offsetHeight ;
-    const x = Math.floor(Math.random() * boxWidth);
-    const y = Math.floor(Math.random() * boxHeight);
+    const circleSize = Math.min(boxWidth, boxHeight) * 0.1;
+    const x = Math.floor(Math.random() * (boxWidth - circleSize));
+    const y = Math.floor(Math.random() * (boxHeight - circleSize));
     circle.style.position = 'absolute'; 
     circle.style.top = `${y}px`; 
     circle.style.left = `${x}px`; 
     circle.style.borderRadius = '50%';
     circle.style.backgroundColor = getRandomColor();
-    circle.style.height = '10%';
-    circle.style.width = '10%';
+    circle.style.height = `${circleSize}px`;
+    circle.style.width = `${circleSize}px`;
     box.appendChild(circle);
 
     console.log(box.offsetHeight, box.offsetWidth)  
